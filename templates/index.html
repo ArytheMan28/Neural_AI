@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./static\asset\favicon.ico">
+    <title>Neural AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-header">
+            <img src="{{ url_for('static', filename='asset/icode-logo.png') }}" class="logo" alt="logo">
+            <a class="gradient title" href="{{ url_for('index') }}"><h1>Neural AI</h1></a>
+        </div>     
+        <div class="links-container">
+            <a href="{{ url_for('index') }}" class="link">Home</a>
+            <a href="{{ url_for('imgGen') }}" class="link">Image Generator</a>
+            <a href="{{ url_for('textGen') }}" class="link">Text Generation</a>
+            <a href="{{ url_for('codie') }}" class="link">Neural Bot</a>
+        </div>
+        <button class="nav-toggler">
+            <span></span>
+        </button>
+    </nav>
+    <section class="main-container">
+        <div class="home-title">
+            <h1 class="gradient">Neural AI</h1>
+            <p class="gradient">Hover over a model to get started!</p>
+        </div>
+        <div class="wrapper">
+            <div class="project bg-img1">
+                <div class="dark-bg"></div>
+                <div class="slide-up">
+                    <h1>Image Generator</h1>
+                    <p>Our Image Generator turns text prompts into detailed visuals using generative AI.</p>
+                    <a href="{{ url_for('imgGen') }}">Try Me</a>
+                </div>
+            </div>
+            <div class="project bg-img2">
+                <div class="dark-bg"></div>
+                <div class="slide-up">
+                    <h1>Text Generation</h1>
+                    <p>Our Text Generator generates natural language responses from user input, ideal for writing and conversation.</p>
+                    <a href="{{ url_for('textGen') }}">Try Me</a>
+                </div>
+            </div>
+            <div class="project bg-img3">
+                <div class="dark-bg"></div>
+                <div class="slide-up">
+                    <h1>Neural Bot</h1>
+                    <p>Neural Bot responds to voice commands and reads aloud to generate both text and images seamlessly.</p>
+                    <a href="{{ url_for('codie') }}">Try Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer-section">
+        <div class="footer-links-container">
+            <a href="{{ url_for('index') }}" class="footer-link">Home</a>
+            <a href="{{ url_for('imgGen') }}" class="footer-link">Image Generator</a>
+            <a href="{{ url_for('textGen') }}" class="footer-link">Text Generation</a>
+            <a href="{{ url_for('codie') }}" class="footer-link">Neural Bot</a>
+        </div>
+        <h5>2025 Neural AI | All Rights Reserved</h5>
+    </section>
+    <script src="https://kit.fontawesome.com/f936f45ab8.js" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='navbar.js') }}"></script>
+</body>
+</html>
