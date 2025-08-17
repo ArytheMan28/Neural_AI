@@ -9,8 +9,7 @@ const downloadableLink = document.querySelector(".download-link");
 
 async function query(data) {
   const response = await fetch(
-    "https://router.huggingface.co/featherless-ai/v1/chat/completions", 
-{
+    "https://router.huggingface.co/featherless-ai/v1/chat/completions", {
       method: "POST",
       headers: {
         "Authorization": `Bearer ${hugging_face_key}`,
