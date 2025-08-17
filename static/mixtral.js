@@ -13,7 +13,7 @@ async function query(data) {
 {
       method: "POST",
       headers: {
-        "Authorization": `Bearer ${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}`,
+        "Authorization": `Bearer ${hugging_face_key}`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
