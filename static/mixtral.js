@@ -7,7 +7,7 @@ const textFrame = document.querySelector(".text-frame");
 const downloadButton = document.querySelector(".download-btn");
 const downloadableLink = document.querySelector(".download-link");
 
-async function query(data) {
+async function textGen(data) {
   const response = await fetch(
     "https://router.huggingface.co/featherless-ai/v1/chat/completions", {
       method: "POST",
