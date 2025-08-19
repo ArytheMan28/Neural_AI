@@ -12,7 +12,7 @@ async function textGen(data) {
     "https://router.huggingface.co/featherless-ai/v1/chat/completions", {
       method: "POST",
       headers: {
-        "Authorization": `Bearer ${hugging_face_key}`,
+        "Authorization": `Bearer ${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}`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
